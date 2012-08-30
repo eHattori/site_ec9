@@ -9,14 +9,10 @@
 <link rel="stylesheet" type="text/css" media="screen" href="../css/green.css" />
 <!--imports prettyPhoto css file-->
 <link rel="stylesheet" type="text/css" media="screen" href="../css/prettyPhoto.css" />
-<link rel="stylesheet" type="text/css" href="font-face.css" media="screen" /> 
- <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAAp8ZX4creCGlC9gSrVQEbERSHZIh53XfjW_ljkOD4q_5yLMJFyhRo9YoevH3sPGEQe0y4BDDuNSdGnw" type="text/javascript"></script>
-
+<link rel="stylesheet" type="text/css" href="font-face.css" media="screen" />
 
 <!--imports jquery-->
 <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
-<!--imports jquery form plugin-->
-<script type="text/javascript" src="../js/jquery.form.js"></script>
 <!--imports twitter feed plugin-->
 <script type="text/javascript" src="../js/jquery.tweet.js"></script>
 <!--imports easing plugin-->
@@ -32,24 +28,6 @@
 
 <!--imports custom javascript code-->
 <script type="text/javascript" src="../js/custom.js"></script>
-
-<script language="javascript" type="text/javascript">
-
-$(document).ready(function() {	
-
-	// CONTACT FORM 
-		
-	$('#contact-form').ajaxForm({
-		target: '#message-outcome',
-			beforeSubmit: function() {
-				$('#message-outcome').addClass('visible');
-			},
-				success: function() {
-					$('#message-outcome').show();
-				}
-	});
-});
-</script>
 
 
 <!--[if IE 7]><link href="../css/ie7.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
@@ -163,12 +141,12 @@ $(document).ready(function() {
 		<div id="page-headline-inner">	
 		
 			<div id="page-title">
-				<h2>Fale conosco</h2>
-				<p>Dúvidas, sugestões, pedidos, reclamações...</p>
+				<h2>Portfolio</h2>
+				<p>Serviços entregues</p>
 			</div><!-- end page-title -->			
 			
 			<div class="breadcrumbs">
-				<span>// You Are Here:</span> <a href="index.html">Home</a> / Contact			
+				<span>// You Are Here:</span> <a href="index.html">Home</a> / Portfolio			
 			</div><!-- end breadcrumbs -->
 			
 		</div><!-- end page-headline-inner -->
@@ -178,86 +156,102 @@ $(document).ready(function() {
 
 	<div id="wrapper">
 
-		<div id="content" class="cont-left">		
-			
-<!--			<h2>Locate Us With Ease</h2>-->
-<!--			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec purus tellus, quis -->
-<!--			pulvinar tortor. Sed mattis lobortis gravida. Integer convallis ipsum in neque tempus -->
-<!--			posuere.</p>-->
-<!--			-->
-<!--			<div id="google-map">-->
-<!--				<iframe width="596" height="245" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Smederevska+Palanka,+Central+Serbia&amp;aq=1&amp;sll=38.918167,-97.209177&amp;sspn=0.013239,0.031478&amp;ie=UTF8&amp;hq=&amp;hnear=Smederevska+Palanka,+Central+Serbia,+Serbia&amp;ll=44.362029,20.961227&amp;spn=0.015341,0.033216&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>-->
-<!--			</div>-->
-<!--			-->
-<!--			<div class="separator"></div>	-->
-			
-			<h2>Vamos conversar</h2>
-			<p>Esse é um espaço totalmente reservado para você, envie-nos sua mensagem e responderemos o mais rápido possível!</p>
-			
-			<form id="contact-form" method="post" action="http://www.ivanjevremovic.in.rs/live/domination/green/submitemail.php">						
-				<p><label for="name">Nome:</label><br />
-				<input  class="textbox" type="text" name="name" id="name" /></p>
-				<p><label for="email">E-mail:</label><br />
-				<input  class="textbox" type="text" name="email" id="email" /></p>
-				<p><label for="subject">Assunto:</label><br />
-				<input  class="textbox" type="text" name="subject" id="subject" /></p>
-				<p><label for="message">Mensagem:</label><br />
-				<textarea class="textbox" name="message" id="message" rows="" cols=""></textarea></p>
-				<input type="submit" name="submit" value="Enviar" id="submit" class="button" /> <br />
-				<p id="message-outcome"></p>
-			</form>	
-			
-		</div><!-- end content -->
+		<div id="portfolio-content">
+			<div class="gallery-thumbs">		
 		
-		<!-- Sidebar Content -->	
-		<div id="sidebar" class="sb-right">	
-		
-			<div class="sidebar-box">
-				<h3>Search</h3>
-				<div id="search-form">
-					<form method="post" action="#">
-						<input type="text" id="search-box" onfocus="if(this.value=='Enter keywords...')this.value='';" onblur="if(this.value=='')this.value='Enter keywords...';" value="Enter keywords..." />
-						<input type="submit" value="Go !" id="search-button"></input>
-					</form>
-				</div>		
-			</div><!-- end sidebar-box -->		
-			
-			<div class="sidebar-box">
-				<h3>Contact Info</h3>
-				<p>
-					Address: <br />
-					Name of the street 123/4 <br />
-					City Name, Country Name<br />
-				</p>
-			
-				<p>
-					Phone: +321 123 456 7 <br />														
-					E-mail: <a href="#">johndoe@ipsum.com</a> <br />
-					Website: <a href="#">www.loremipsum.com</a> <br />
-				</p>			
-			</div><!-- end sidebar-box -->		
+				<div class="item">
+					<div class="preview two-third">
+						<div class="gallery-overlay">					
+							<a class="zoom" href="../img/portfolio/large/001.jpg" rel="prettyPhoto">
+								<img src="../img/portfolio/gallery/1001.jpg" alt="description" />
+							</a>
+						</div>
+					</div><!-- end preview -->
+					
+					<div class="item-details one-third">
+						<h3>Portal #FAZ BONITO</h3>
+						<p>Uma idéia ousada que visa grande participação da população de Ribeirão Bonito - SP</p>
 						
-	
-			<div class="sidebar-box">
-				<h3>Sidebar Menu</h3>
-				<ul class="sidebar-menu arrows">
-					<li><a href="#">Fusce Scelerisque</a></li>
-					<li><a href="#">Suspendisse Elementum</a></li>
-					<li><a href="#">Mauris Lorem Velit</a></li>
-					<li><a href="#">Duis Necpurus Tellus</a></li>				
-				</ul>
-			</div><!-- end sidebar-box -->				
-							
-			<div class="sidebar-box">
-				<div class="video">
-					<h3>Sidebar Video</h3>
-					<iframe src="http://player.vimeo.com/video/7449107?title=0&amp;byline=0&amp;portrait=0" width="259" height="158"></iframe>	
-				</div><!-- end sidebar-video -->
-			</div><!-- end sidebar-box -->
+						<ul class="custom-list check">
+							<li>Informações/dicas para as eleições</li>
+							<li>Cadastro de usuários</li>
+							<li>Área Administrativa</li>			
+						</ul>
+						
+						<a class="button" href="#">Project Details</a>
+						
+					</div><!-- end item-details -->
+					<div class="clear"></div>
+				</div><!-- end item -->	
+
+				<div class="separator"></div>			
+				
+				<div class="item">
+					<div class="preview two-third">
+						<div class="gallery-overlay">					
+							<a class="play" href="http://vimeo.com/7449107" title="Vimeo Video" rel="prettyPhoto">
+								<img src="../img/portfolio/gallery/1002.jpg" alt="description" />
+							</a>
+						</div>
+					</div><!-- end preview -->
+					
+					<div class="item-details one-third">
+						<h3>Baldan</h3>
+						<p>Tradição em máquinas para madeira.</p>
+						
+						<ul class="custom-list check">
+							<li>Produtos</li>
+							<li>Newsletter</li>
+							<li>Área Administrativa</li>			
+						</ul>
+						
+						<a class="button" href="#">Project Details</a>
+						
+					</div><!-- end item-details -->
+					<div class="clear"></div>
+				</div><!-- end item -->
+				
+<!--				<div class="separator"></div>			-->
+<!--				-->
+<!--				<div class="item">-->
+<!--					<div class="preview two-third">-->
+<!--						<div class="gallery-overlay">					-->
+<!--							<a class="link" href="http://www.themeforest.net/?iframe=true&amp;width=70%&amp;height=60%" title="themeforest.net" rel="prettyPhoto">-->
+<!--								<img src="../img/portfolio/gallery/1003.jpg" alt="description" />-->
+<!--							</a>-->
+<!--						</div>-->
+<!--					</div> end preview -->
+<!--					-->
+<!--					<div class="item-details one-third">-->
+<!--						<h3>Themeforest Site iFrame</h3>-->
+<!--						<p>Fusce scelerisque pellentesque mi. Suspendisse elementum tellus ut quam pharetra vel volutpat.</p>-->
+<!--						-->
+<!--						<ul class="custom-list check">-->
+<!--							<li>Consectetur adipiscing elit</li>-->
+<!--							<li>Aliquam in justo a sapien </li>-->
+<!--							<li>Massa euismod tempus</li>			-->
+<!--						</ul>-->
+<!--						-->
+<!--						<a class="button" href="#">Project Details</a>-->
+<!--						-->
+<!--					</div> end item-details -->
+<!--					<div class="clear"></div>-->
+<!--				</div> end item 				-->
+				
+			</div><!-- end portfolio-thumbs -->
 			
-		</div><!-- end sidebar -->
+			<div class="clear"></div>
+			
+<!--			<ul id="pagination">-->
+<!--				<li><a href="#">Prevoius</a></li>-->
+<!--				<li><a class="active-nav" href="#">1</a></li>-->
+<!--				<li><a href="#">2</a></li>-->
+<!--				<li><a href="#">3</a></li>-->
+<!--				<li><a href="#">4</a></li>-->
+<!--				<li><a href="#">Next</a></li>-->
+<!--			</ul> end portfolio-nav -->
 		
-		<div class="clear"></div>
+		</div><!-- end portfolio-content -->
 		
 	</div><!-- end wrapper -->
 	
