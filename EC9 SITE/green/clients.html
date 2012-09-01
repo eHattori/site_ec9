@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>EC9 - Simplificando suas ideias.</title>
+<title>Domination</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <!--imports the main css file-->
@@ -25,11 +25,29 @@
 <script type="text/javascript" src="../js/superfish.js"></script>
 <!--imports jQuery jflickrfeed plugin-->
 <script type="text/javascript" src="../js/jflickrfeed.min.js"></script>
+<!--imports jQuery AsyncSlider plugin-->
+<script type="text/javascript" src="../js/jquery.asyncslider.min.js"></script>
+
+
 
 <!--imports custom javascript code-->
 <script type="text/javascript" src="../js/custom.js"></script>
 
+<script language="javascript" type="text/javascript">
 
+$(document).ready(function() {	
+	// Setup Slider
+	$("#async-slider").asyncSlider({
+		keyboardNavigate: true,
+		easing: 'easeInOutExpo',
+		minTime: 600,
+		maxTime: 1500,
+		autoswitch: 4800,
+		centerPrevNextNav: false,
+		slidesNav: false
+	});
+});
+</script>
 <!--[if IE 7]><link href="../css/ie7.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
 <!--[if IE 8]><link href="../css/ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
 
@@ -90,7 +108,7 @@
 </div><!-- END optwrap -->	
 
 <!--  END STYLE SWITCHER (preview only)  -->
-			
+	
 	<div id="header">
 		<div id="header-inner">
 			<div id="logo">
@@ -114,6 +132,12 @@
 						<span>Mais Dethalhes</span>						
 					</a>
 				</li>
+				
+				<li>
+					<a href="portfolio.html">Clientes
+						<span>Mais Dethalhes</span>						
+					</a>
+				</li>
 
 				<li>
 					<a href="contact.html">Contato
@@ -131,96 +155,49 @@
 		<div id="page-headline-inner">	
 		
 			<div id="page-title">
-				<h2>EC9</h2>
-				<p>Transformando suas ideias.</p>
+				<h2>Clientes</h2>
+				<p>Enter your additional description here...</p>
 			</div><!-- end page-title -->			
 			
 			<div class="breadcrumbs">
-				<span>Você esta aqui:</span> <a href="index.html">Início</a> / Sobre nós			
+				<span>// You Are Here:</span> <a href="index.html">Home</a> / Portfolio			
 			</div><!-- end breadcrumbs -->
 			
-		</div><!-- end page-headline-inner -->	
-			
-		<div class="separator"></div>
+		</div><!-- end page-headline-inner -->
+	
+		<div class="separator"></div>	
 	</div><!-- end page-headline -->		
 
 	<div id="wrapper">
 
-		<div style="width: 100%" id="content" class="cont-left">		
-			<h2>A Empresa</h2>
-			<!--<p class="subtitle-block">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque facilisis semper congue. Vestibulum sollicitudin lacus non nisl</p> -->
-			<p>A EC9 é uma empresa de tecnologia recém-formada por jovens programadores que aposta na inovação e no empreendedorismo, criatividade e ousadia para atender seus clientes de forma eficiente, estética e prática. A EC9 está pronta para atender sua empresa prestando serviços de Desenvolvimento de Softwares para Diversos Setores, Tecnologia, Integração de Plataformas e Ferramentas, Migração, Hospedagem e Servidores, Soluções Mobile. </p>
-			<img style="margin-left: 15%" class="frame" src="../img/placeholder-1.jpg" alt="Image description" />
-			<p>Nosso foco é o seu foco. A EC9 tem como ponto forte a grande capacide de se adaptar no que o cliente precisa, desde as coisas mais simples até os projetos mais robustos. Nossa intenção é sempre ter um bom relacionamento com o cliente e cumprir rigorosamente seus pedidos, pois acreditamos que com o crescimento de um lado, consequentemente o outro lado irá se beneficiar dessa situação.</p>
-			<p>Os projetos desenvolvidos pela EC9 visam a intuitividade e total controle do administrador contratante. Com área administrativa bem elaborada para que o usuário possa controlar um site dinâmico e atualizado de acordo com suas necessidades. Assim, diminuindo a necessidade do cliente solicitar algo para nós da EC9 relacionado a administração dos conteúdos, possibilitando mais agilidade e facilidade para o cliente.</p>
-			<p>Para mais informações ou dúvidas, entre em <a href="contact.html">contato</a> conosco.</p>
-			<p class="subtitle-block">O inicio de tudo...</p>
-			<p>A ideia EC9 surgiu dentro da faculdade, ao sermos questionados sobre qualidade e excelência dos projetos entregue por empresas da área de TI(Tecnologia da informação) vimos que havia um descontentamento enorme por parte dos contratantes, falta de comprometimento, atraso no prazo de entrega, qualidade duvidosa é uns dos fatores que aumenta a insatisfação dos clientes, através disso veio a ideia EC9, uma ideia para mudar esses conceitos, a EC9 foi fundada justamente para satisfazer suas necessidades com o Maximo empenho, agilidade e o mais importante, com a qualidade desejada.</p>						
-			<div class="separator"></div>	
-			
-			<h2>Equipe</h2>
-			
-
-			<div id="team" style="width: 102%;">
-				<div class="member">
-					<div class="member-img">
-						<img src="../img/team-1.png" alt="image" />
+		<div id="portfolio-content">
+		
+			<ul class="gallery-thumbs">
+		
+		
+				<li class="one-fourth">
+					<div class="gallery-overlay">					
+						<img width="100%" src="../img/clients/amarribo.jpg" alt="description" />
 					</div>
-				</div>
+				</li>
 				
-				<div class="member">
-					<div class="member-img">
-						<img src="../img/team-3.png" alt="image" />
+				<li class="one-fourth">
+					<div class="gallery-overlay">					
+						<img width="100%" src="../img/clients/abracci.jpg" alt="description" />
 					</div>
-				</div>
+				</li>
 				
-				<div class="member">
-					<div class="member-img">
-						<img src="../img/team-1.png" alt="image" />
+				<li class="one-fourth">
+					<div class="gallery-overlay">					
+						<img width="100%" src="../img/clients/baldan.jpg" alt="description" />
 					</div>
-				</div>
+				</li>
 				
-				<div class="member">
-					<div class="member-img">
-						<img src="../img/team-4.png" alt="image" />
-					</div>
-				</div>
-				<div class="member">
-					<div class="member-img">
-						<img src="../img/team-3.png" alt="image" />
-					</div>
-				</div>
-				<div class="member">
-					<div class="member-img">
-						<img src="../img/team-4.png" alt="image" />
-					</div>
-				</div>
-				
-			<p>Nossa equipe conta com profissionais qualificados e prontos para atender suas necessidades</p>
-			
-			<p>Integrantes com boa experiência na área de programação preparados para proporcioná-los um bom investimento com retorno e sem arrependimentos!</p>
-			
-			
-			</div><!-- end team -->
+			</ul><!-- end portfolio-thumbs -->
 			
 			<div class="clear"></div>
 			
-			<div class="separator"></div>	
-			
-<!--			<h2>Word From The Founder</h2>-->
-<!--			<p>Fusce scelerisque pellentesque mi. Suspendisse elementum tellus ut quam pharetra vel volutpat et, euismod eu sem. Aliquam eget lacus magna quis. Nulla id massa ac eros dignissim volutpat ac vel tortor.</p>-->
-			<blockquote>
-				<p>Não penso muito em legado para as próximas gerações. Penso apenas em acordar de manhã e trabalhar com pessoas brilhantes para criar coisas que, espero, sejam tão apreciadas por outras pessoas como são apreciadas por nós.</p>
-				<div class="author">Steve Jobs</div>
-			</blockquote>
-		
-		</div><!-- end content -->
-		
-		<!-- Sidebar Content -->	
-		
-		<!-- end sidebar -->		
-		
-		<div class="clear"></div>
+		</div><!-- end portfolio-content -->
 		
 	</div><!-- end wrapper -->
 	

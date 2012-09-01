@@ -2,16 +2,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>EC9 - Simplificando suas ideias</title>
+<title>Domination</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <!--imports the main css file-->
-<link rel="stylesheet" type="text/css" media="screen" title="default" href="../css/green.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/green.css" />
 <!--imports prettyPhoto css file-->
 <link rel="stylesheet" type="text/css" media="screen" href="../css/prettyPhoto.css" />
 <link rel="stylesheet" type="text/css" href="font-face.css" media="screen" />
-<!--imports Nivo Slider css file-->
-<link rel="stylesheet" type="text/css" media="screen" href="../css/nivo-slider.css" />
 
 <!--imports jquery-->
 <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
@@ -23,12 +21,14 @@
 <script type="text/javascript" src="../js/jquery.prettyPhoto.js"></script>
 <!--imports jQuery Tools plugin-->
 <script type="text/javascript" src="../js/jquery.tools.min.js"></script>
-<!--imports jQuery Nivo Slider plugin-->
-<script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
 <!--imports jQuery superfish plugin-->
 <script type="text/javascript" src="../js/superfish.js"></script>
 <!--imports jQuery jflickrfeed plugin-->
 <script type="text/javascript" src="../js/jflickrfeed.min.js"></script>
+<!--imports jQuery AsyncSlider plugin-->
+<script type="text/javascript" src="../js/jquery.asyncslider.min.js"></script>
+
+
 
 <!--imports custom javascript code-->
 <script type="text/javascript" src="../js/custom.js"></script>
@@ -36,24 +36,25 @@
 <script language="javascript" type="text/javascript">
 
 $(document).ready(function() {	
-	$('#slider').nivoSlider({
-        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'       
-        animSpeed: 500, // Slide transition speed
-        pauseTime: 3000, // How long each slide will show
-        startSlide: 0, // Set starting Slide (0 index)        
-        directionNavHide: true, // Only show on hover
-        controlNav: false, // 1,2,3... navigation
-        captionOpacity: 0.9 // Universal caption opacity        
-    }); 	
+	// Setup Slider
+	$("#async-slider").asyncSlider({
+		keyboardNavigate: true,
+		easing: 'easeInOutExpo',
+		minTime: 600,
+		maxTime: 1500,
+		autoswitch: 4800,
+		centerPrevNextNav: false,
+		slidesNav: false
+	});
 });
 </script>
-
 <!--[if IE 7]><link href="../css/ie7.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
 <!--[if IE 8]><link href="../css/ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
 
 <link rel="stylesheet" href="../css/layout.css" type="text/css" />
 <script type="text/javascript" src="../js/options.js"></script>
  
+
 </head>
 
 <body class="pattern-1">	
@@ -131,6 +132,12 @@ $(document).ready(function() {
 						<span>Mais Dethalhes</span>						
 					</a>
 				</li>
+				
+				<li>
+					<a href="clients.html">Clientes
+						<span>Mais Dethalhes</span>						
+					</a>
+				</li>
 
 				<li>
 					<a href="contact.html">Contato
@@ -143,37 +150,69 @@ $(document).ready(function() {
 		</div><!-- end header-inner -->
 	</div><!-- end header -->
 	
-<!-- BEGIN NIVO SLIDER -->
+<!-- BEGIN ASYNC SLIDER -->
 
-	<div id="slider-container">
+	<div id="content-slider">		
+		<ul id="async-slider" class="round-images">
+			<li class="slide">
+				<div class="three-fifth fl-left">
+					<h2>Welcome to Domination</h2>
+					<h3>Maecenas sem orci, scelerisque sed tempor idlibero. Nulla in diam ante. Vestibulum erat nisi</h3>
+					<p>Integer ac massa tellus. Maecenas vitae ante leo, eu lacininulla. Quisque lobortis sodales tempus labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a class="button" href="#">Continue Reading</a>
+				</div>	
+				
+				<img class="fl-right" src="../img/sliders/async/001.png" alt="image" />
+					
+			</li>
+			
+			<li class="slide">
+				<div class="three-fifth fl-left">
+					<h2>Premium HTML Template</h2>
+					<h3>Maecenas sem orci, scelerisque sed tempor idlibero. Nulla in diam ante. Vestibulum erat nisi</h3>
+					<p>Integer ac massa tellus. Maecenas vitae ante leo, eu lacininulla. Quisque lobortis sodales tempus labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a class="button" href="#">Continue Reading</a>
+				</div>	
+				
+				<img class="fl-right" src="../img/sliders/async/004.png" alt="image" />
+					
+			</li>
+			
+			<li class="slide">
+				<div class="three-fifth fl-left">
+					<h2>Well Documented</h2>
+					<h3>Maecenas sem orci, scelerisque sed tempor idlibero. Nulla in diam ante. Vestibulum erat nisi</h3>
+					<p>Integer ac massa tellus. Maecenas vitae ante leo, eu lacininulla. Quisque lobortis sodales tempus labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a class="button" href="#">Continue Reading</a>
+				</div>	
+				
+				<img class="fl-right" src="../img/sliders/async/003.png" alt="image" />
+					
+			</li>
+			
+			<li class="slide">			
+								
+				<img class="fl-left" src="../img/sliders/async/002.png" alt="image" />
+				
+				<div class="three-fifth last fl-right">
+					<h2>Multipurpose Design</h2>
+					<h3>Maecenas sem orci, scelerisque sed tempor idlibero. Nulla in diam ante. Vestibulum erat nisi</h3>
+					<p>Integer ac massa tellus. Maecenas vitae ante leo, eu lacininulla. Quisque lobortis sodales tempus labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a class="button" href="#">Continue Reading</a>
+				</div>	
+			
+			</li>
+					
+		</ul>	
+		<div class="clear"></div><!-- end clearfix -->			
+	</div><!-- end content-slider -->	
 
-		<div id="slider" class="nivoSlider">
-	        <img src="../img/sliders/nivo/slide-1.jpg" alt="image description" title="#caption-1"/>
-	        <img src="../img/sliders/nivo/slide-2.jpg" alt="image description" title="#caption-2"/>
-	        <img src="../img/sliders/nivo/slide-3.jpg" alt="image description" />
-	        <img src="../img/sliders/nivo/slide-4.jpg" alt="image description" />
-	    </div>
-
-	   <div id="caption-2" class="nivo-html-caption">
-	        <h3>Faça seu pedido!</h3>
-	        <p>Preços acessíveis para você.</p>
-	    </div>
-	    
-	   <div id="caption-1" class="nivo-html-caption">
-	        <h3>EC9</h3>
-	        <p>Transformando sua ideias.</p>
-	    </div><!-- end nivo captions -->
-
-
-	</div><!-- end slider-container -->	
-
-<!-- END NIVO SLIDER -->
-
+<!-- END ASYNC SLIDER -->
 	<div class="container">
 		<div class="tagline">
 			<div class="tagline-text">
 				<h2>Bem vindo a <span>EC9</span> - empresa de tecnologia</h2>
-				<p>Apostamos na inovação, empreendedorismo, criatividade e ousadia para atender suas necessidades de forma eficiente, eficaz e prática.</p>
+				<p>Inovação, empreendedorismo, criatividade e ousadia para atender suas necessidades de forma eficiente, eficaz e prática.</p>
 			</div><!-- end tagline-text -->
 			
 			<div class="tagline-btn">
@@ -188,34 +227,34 @@ $(document).ready(function() {
 	<!-- The Accolade, etc... -->
 		
 		<div class="title-col">
-			<h2>Projetos Recentes</h2>
-			<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Duis nec purus.</p>
+			<h2>Últimos Projetos</h2>
+			<p>Confira nosso trabalho.</p>
 			<a class="button" href="portfolio.html">Ver Portfolio </a>
 		</div><!-- end main-col -->
 		
 		<ul class="gallery-thumbs-caption">
 			<li class="one-fourth">
 				<div class="gallery-overlay">	
-					<a class="zoom" href="../img/portfolio/gallery/fazbonito_zoom.png" rel="prettyPhoto">
-						<img class="box-img" src="../img/portfolio/gallery/fazbonito.png" alt="#FAZBONITO" width="100%" height="100%"/>
+					<a title="" class="zoom" href="../img/portfolio/gallery/fazbonito_zoom.png" rel="prettyPhoto">
+						<img class="box-img" src="../img/portfolio/gallery/fazbonito_home.png" alt="#FAZBONITO" width="100%" height="100%"/>
 					</a>
 				</div>
 				
 				<div class="img-caption">
-					<h4>Projeto #FAZBONITO</h4>					
-					<p>Uma idéia ousada que visa grande participação da população de Ribeirão Bonito - SP.</p>
+					<h4>#FAZBONITO</h4>					
+					<p>Plataforma de participação política.</p>
 				</div><!-- end img-caption -->
 			</li><!-- end one-fourth -->
 			
 			<li class="one-fourth last">
 				<div class="gallery-overlay">	
-					<a class="zoom" href="../img/portfolio/gallery/baldan_zoom.png" rel="prettyPhoto">
-						<img class="box-img" src="../img/portfolio/gallery/baldan.png" alt="Baldan" width="100%" height="100%"/>
+					<a title="" class="zoom" href="../img/portfolio/gallery/baldan_zoom.png" rel="prettyPhoto">
+						<img class="box-img" src="../img/portfolio/gallery/baldan_home.png" alt="Baldan" width="100%" height="100%"/>
 					</a>					
 				</div>							
 				
 				<div class="img-caption">
-					<h4>Projeto Baldan</h4>					
+					<h4>Baldan</h4>					
 					<p>Tradição em máquinas para madeira.</p>
 				</div><!-- end img-caption -->
 			</li><!-- end one-fourth -->
