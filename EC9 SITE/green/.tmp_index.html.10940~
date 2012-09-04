@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>.::EC9::.. </title>
+<title>Domination</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <!--imports the main css file-->
@@ -112,7 +112,7 @@ $(document).ready(function() {
 	<div id="header">
 		<div id="header-inner">
 			<div id="logo">
-				<a href="index.html"><img src="../img/logoEC9.png" alt="image description"/></a> 
+				<a href="index.html"><img src="../img/logoEC9.png" alt="image description"/>	</a>
 			</div><!-- end logo -->
 
 			<ul id="navigation">
@@ -156,7 +156,7 @@ $(document).ready(function() {
 		<ul id="async-slider" class="round-images">
 			<li class="slide">
 				<div class="three-fifth fl-left">
-					<h2 style="color: #008f0a; font-size: 35px;font-weight: bold;">Desenvolvimento de sites</h2>
+					<h2>Desenvolvimento de sites</h2>
 					<h3>Modernos, interarivos, administráveis e com as funcionalidades que você precisa.</h3>
 					</div>	
 				
@@ -166,7 +166,7 @@ $(document).ready(function() {
 			
 			<li class="slide">
 				<div class="three-fifth fl-left">
-					<h2 style="color: #034ea2; font-size: 35px;font-weight: bold;">Software Web</h2>
+					<h2>Software Web</h2>
 					<h3>Soluções de gestão e tecnologia desenvolvidas sob medida para sua organização.</h3>
 				</div>	
 				
@@ -176,7 +176,7 @@ $(document).ready(function() {
 			
 			<li class="slide">
 				<div class="three-fifth fl-left">
-					<h2 style="color: #ec008c; font-size: 35px;font-weight: bold;">Melhor custo x benefício</h2>
+					<h2>Melhor custo x benefício</h2>
 					<h3>Eficiência nos serviços aliado ao melhor preço do mercado. Solicite um orçamento sem compromisso!</h3>
 				</div>	
 				
