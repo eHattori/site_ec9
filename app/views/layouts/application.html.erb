@@ -1,14 +1,69 @@
-<!DOCTYPE html>
-<html>
+<%# encoding: utf-8 %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>SiteEc9</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<title>EC9 - Simplificando suas ideias.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--imports the main css file-->
+<%= stylesheet_link_tag  "green" %>
+<%= javascript_include_tag "jquery-1.7.1.min" %>
+<!--imports prettyPhoto css file-->
+<%= stylesheet_link_tag  "prettyPhoto" %>
+<%= stylesheet_link_tag  "font-face" %>
+<!--imports jquery-->
+
+<!--imports custom javascript code-->
+
+
+<!--[if IE 7]><link href="../css/ie7.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 8]><link href="../css/ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+
+<%= stylesheet_link_tag "layout" %>
+<%= javascript_include_tag "options" %> 
+
+
 </head>
-<body>
+<body class="pattern-1">
 
 <%= yield %>
 
+<div id="footer">
+		<div id="footer-content">			
+					
+		</div><!-- end footer-content -->
+		
+		<div class="clear"></div>
+		
+		<div id="footer-bottom-content">
+		
+			<div id="footer-logo">
+				<h3><a href="#">EC9</a></h3>
+				<p>Transformando suas <span>ideias</span></p>
+			</div><!-- end footer-logo -->
+		
+			<div id="copyright">				
+				<p>Copyright &copy; 2012 EC9. All rights reserved</p>
+			</div><!-- end copyright -->					
+			
+			<a href="#" class="scroll-top">Topo</a>
+		</div><!-- end footer-bottom-content -->
+		
+	</div><!-- end footer -->
+
+<!--imports twitter feed plugin-->
+<%= javascript_include_tag "jquery.tweet" %>
+<!--imports easing plugin-->
+<%= javascript_include_tag "easing" %>
+<!--imports prettyPhoto plugin-->
+<%= javascript_include_tag "jquery.prettyPhoto" %>
+<!--imports jQuery Tools plugin-->
+<%= javascript_include_tag "jquery.tools.min" %>
+<!--imports jQuery superfish plugin-->
+<%= javascript_include_tag "superfish" %>
+<!--imports jQuery jflickrfeed plugin-->
+<%= javascript_include_tag "jflickrfeed.min" %>
+<%= javascript_include_tag "jquery.asyncslider.min" %>
 </body>
 </html>

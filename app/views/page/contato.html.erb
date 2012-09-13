@@ -1,0 +1,84 @@
+<div id="header">
+		<div id="header-inner">
+			<div id="logo">
+				<a href="home.html"><img src="<%= image_path 'logoEC9.png'%>" alt="image description"/>	</a>
+			</div><!-- end logo -->
+
+			<ul id="navigation">
+				<li>
+					<a href="home.html">Home
+					</a>
+				</li>
+
+				<li>
+					<a class="active-nav" href="empresa.html">A Empresa
+						<span>Mais Detalhes</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="portfolio.html">Portfolio
+						<span>Mais Dethalhes</span>						
+					</a>
+				</li>
+				
+				<li>
+					<a href="clientes.html">Clientes
+						<span>Mais Dethalhes</span>						
+					</a>
+				</li>
+
+				<li>
+					<a href="contato.html">Contato
+						<span>Mais Detalhes</span>
+					</a>
+				</li>
+			</ul><!-- end navigation -->
+
+			<div class="clear"></div><!-- end clearfix -->
+		</div><!-- end header-inner -->
+	</div><!-- end header -->	
+	<div id="page-headline">
+	
+		<div id="page-headline-inner">	
+		
+			<div id="page-title">
+				<h2>Contato</h2>
+				<p>Dúvidas, sugestões, pedidos, reclamações...</p>
+			</div><!-- end page-title -->			
+			
+			<div class="breadcrumbs">
+				<span>Você está aqui:</span> <a href="home.html">Home</a> / Contato			
+			</div><!-- end breadcrumbs -->
+			
+		</div><!-- end page-headline-inner -->
+	
+		<div class="separator"></div>	
+	</div><!-- end page-headline -->		
+
+	<div id="wrapper">
+
+		<div id="content" class="cont-left">		
+			
+			<h2>NAO SEI O Q POR AKI</h2>
+			<p>Envie-nos sua mensagem e responderemos o mais rápido possível!</p>
+			<form id="contact-form" method="post" action="http://www.ivanjevremovic.in.rs/live/domination/green/submitemail.php">						
+				
+				<p><label for="name">Nome:</label><br />
+				<input  class="textbox" type="text" name="name" id="name" /></p>
+				<p><label for="email">E-mail:</label><br />
+				<input  class="textbox" type="text" name="email" id="email" /></p>
+				<p><label for="subject">Assunto:</label><br />
+				<input  class="textbox" type="text" name="subject" id="subject" /></p>
+				<p><label for="message">Mensagem:</label><br />
+				<textarea class="textbox" name="message" id="message" rows="" cols=""></textarea></p>
+				<input type="submit" name="submit" value="Enviar" id="submit" class="button" /> <br />
+				<p id="message-outcome"></p>
+			</form>	
+			
+		</div><!-- end content -->
+		
+		<div class="clear"></div>
+		
+	</div><!-- end wrapper -->
+	

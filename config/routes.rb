@@ -1,4 +1,12 @@
 SiteEc9::Application.routes.draw do
+  get "page/empresa"
+  get "page/home"
+  get "page/portfolio"
+  get "page/clientes"
+  get "page/contato"
+
+  math "contato", to:"pages#contato", as:"contato"
+  math "dispara_email", to:"pages#dispara_email", as:"dispara_email", method: :post
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
