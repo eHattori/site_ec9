@@ -5,16 +5,13 @@ class ContatoMailer< ActionMailer::Base
 
 	default to:"contato@ec9.com.br"
 			from: mensagem
-	headers = {'Retun-Path' => mensagem}
+  headers = {'Retun-Path' => mensagem}
 
 	def enviar_email(info_usuario)	
 		@info_usuario = info_usuario
 
-		mail(	
-			to:"contato@ec9.com.br",
-			subject:"Formulário de Contato da minha aplicação",
-			from:"Aplicação #{mensagem}", mensagem
-
-
-			)
+		mail(:to => App.email.andress,
+			:from => info_usuario.email,
+			:subject => info_usuario.subject)
+    end
 end

@@ -4,9 +4,12 @@ SiteEc9::Application.routes.draw do
   get "page/portfolio"
   get "page/clientes"
   get "page/contato"
+  get "page/mensagem_contato"
 
-  math "contato", to:"pages#contato", as:"contato"
-  math "dispara_email", to:"pages#dispara_email", as:"dispara_email", method: :post
+ resources :mensagem_contato, :only => [:create]
+
+  root :to => 'page#contato'
+ 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -62,19 +62,21 @@
 			
 			<h2>NAO SEI O Q POR AKI</h2>
 			<p>Envie-nos sua mensagem e responderemos o mais rápido possível!</p>
-			<form id="contact-form" method="post" action="http://www.ivanjevremovic.in.rs/live/domination/green/submitemail.php">						
+			<%= form_for @contact_message, :as => :mensagem_contato, 
+                                 :url => { :controller => :mensagem_contato_controller, :action => :create },
+                                 :remote => true do |f| %>						
 				
-				<p><label for="name">Nome:</label><br />
-				<input  class="textbox" type="text" name="name" id="name" /></p>
-				<p><label for="email">E-mail:</label><br />
-				<input  class="textbox" type="text" name="email" id="email" /></p>
-				<p><label for="subject">Assunto:</label><br />
-				<input  class="textbox" type="text" name="subject" id="subject" /></p>
-				<p><label for="message">Mensagem:</label><br />
-				<textarea class="textbox" name="message" id="message" rows="" cols=""></textarea></p>
-				<input type="submit" name="submit" value="Enviar" id="submit" class="button" /> <br />
+				<p> <%= f.label :nome %>:<br />
+				<%= f.text_field :nome %>
+				<p><%= f.label :email %>:<br />
+				<%= f.text_field :email %></p>
+				<p> <%= f.label :assunto %>:<br />
+				<%= f.text_field :assunto %></p></p>
+				<p><%= f.label :mensagem %>:<br />
+				<%= f.text_area :mensagem, :rows => 10 %>
+				<%= f.submit "Enviar" %><br />
 				<p id="message-outcome"></p>
-			</form>	
+			<% end %>
 			
 		</div><!-- end content -->
 		
