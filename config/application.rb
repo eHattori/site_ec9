@@ -59,17 +59,6 @@ module SiteEc9
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.action_mailer.smtp_settings = {
-
-        :address      => "smtp.gmail.com",
-        :port         => 587,
-        :domain       => "www.ec9.com.br",
-        :user_name    => "maicon.oliveira@ec9.com.br",
-        :password     => "maicon120219",
-        :authentication =>:plain,
-        :enable_starttls_auto => true
-    }
-
     config.action_mailer.default_url_options = {
         :host => "www.ec9.com.br"
     }

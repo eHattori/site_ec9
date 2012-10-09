@@ -62,22 +62,24 @@
 			
 			<h2>NAO SEI O Q POR AKI</h2>
 			<p>Envie-nos sua mensagem e responderemos o mais rápido possível!</p>
-				<%= form_for @mensagem, :url => contato_path do |form| %>
-				<p><%= form.label :nome%><br />
-				<%= form.text_field :nome %><br />
-				<p><%= form.label :email %><br />
-				<%= form.text_field :email %><br />
-				<p><%= form.label :assunto %><br />
-				<%= form.text_field :assunto %><br />
-				<p><%= form.label :mensagem %><br />
-				<%= form.text_area :mensagem %><br />
+			<%= form_for @mensagem, :as => :mensagem, 
+                                 :url => { :controller => :mensagem, :action => :create },
+                                 :remote => true do |f| %>						
 				
-				<%= form.submit "Enviar"%>
-			<% end %>	
-						
+				<p> <%= f.label :nome %>:<br />
+				<%= f.text_field :nome %>
+				<p><%= f.label :email %>:<br />
+				<%= f.text_field :email %></p>
+				<p> <%= f.label :assunto %>:<br />
+				<%= f.text_field :assunto %></p></p>
+				<p><%= f.label :mensagem %>:<br />
+				<%= f.text_area :mensagem, :rows => 10 %>
+				<%= f.submit "Enviar" %><br />
+				<p id="message-outcome"></p>
+			<% end %>
+			
 		</div><!-- end content -->
 		
 		<div class="clear"></div>
 		
 	</div><!-- end wrapper -->
-	
