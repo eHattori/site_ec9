@@ -5,8 +5,14 @@ SiteEc9::Application.routes.draw do
   get "page/clientes"
   get "page/contato"
 
-  math "contato", to:"pages#contato", as:"contato"
-  math "dispara_email", to:"pages#dispara_email", as:"dispara_email", method: :post
+ # match "contato", to:"page#contato", as:"contato"
+  #match "dispara_email", to:"page#dispara_email", as:"dispara_email", method: :post
+
+
+match 'contato' => 'contato#novo', :as => 'contato', :via => :get
+match 'contato' => 'contato#criar', :as => 'contato', :via => :post
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

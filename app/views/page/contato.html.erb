@@ -62,20 +62,19 @@
 			
 			<h2>NAO SEI O Q POR AKI</h2>
 			<p>Envie-nos sua mensagem e responderemos o mais rápido possível!</p>
-			<form id="contact-form" method="post" action="http://www.ivanjevremovic.in.rs/live/domination/green/submitemail.php">						
+				<%= form_for @mensagem, :url => contato_path do |form| %>
+				<p><%= form.label :nome%><br />
+				<%= form.text_field :nome %><br />
+				<p><%= form.label :email %><br />
+				<%= form.text_field :email %><br />
+				<p><%= form.label :assunto %><br />
+				<%= form.text_field :assunto %><br />
+				<p><%= form.label :mensagem %><br />
+				<%= form.text_area :mensagem %><br />
 				
-				<p><label for="name">Nome:</label><br />
-				<input  class="textbox" type="text" name="name" id="name" /></p>
-				<p><label for="email">E-mail:</label><br />
-				<input  class="textbox" type="text" name="email" id="email" /></p>
-				<p><label for="subject">Assunto:</label><br />
-				<input  class="textbox" type="text" name="subject" id="subject" /></p>
-				<p><label for="message">Mensagem:</label><br />
-				<textarea class="textbox" name="message" id="message" rows="" cols=""></textarea></p>
-				<input type="submit" name="submit" value="Enviar" id="submit" class="button" /> <br />
-				<p id="message-outcome"></p>
-			</form>	
-			
+				<%= form.submit "Enviar"%>
+			<% end %>	
+						
 		</div><!-- end content -->
 		
 		<div class="clear"></div>
