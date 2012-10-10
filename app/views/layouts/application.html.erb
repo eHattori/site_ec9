@@ -23,8 +23,47 @@
 <%= stylesheet_link_tag "layout" %>
 <%= javascript_include_tag "options" %> 
 
-
 </head>
+<div id="header">
+		<div id="header-inner">
+			<div id="logo">
+				<a href="home.html"><img src="<%= image_path 'logoEC9.png'%>" alt="image description"/>	</a>
+			</div><!-- end logo -->
+
+			<ul id="navigation">
+				<li>
+					<%= link_to page_home_path do %>Home
+					<% end %>
+				</li>
+
+				<li>
+					<%= link_to page_empresa_path  do  %>A Empresa
+					<span>Mais Detalhes</span>
+					<% end %>
+				</li>
+
+				<li>
+					<%= link_to page_portfolio_path do %>Portfolio
+					<span>Mais Dethalhes</span>
+					<% end %>
+				</li>
+				
+				<li>
+					<%= link_to page_clientes_path do %>Clientes
+						<span>Mais Dethalhes</span>						
+					<% end %>
+				</li>
+
+				<li>
+					<%= link_to page_contato_path do %>Contato
+						<span>Mais Detalhes</span>
+					<% end %>
+				</li>
+			</ul><!-- end navigation -->
+
+			<div class="clear"></div><!-- end clearfix -->
+		</div><!-- end header-inner -->
+	</div>
 <body class="pattern-1">
 
 <%= yield %>
